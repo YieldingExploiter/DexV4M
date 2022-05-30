@@ -1,0 +1,19 @@
+{
+  "name": "dexv4-modded",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "pnpm bundle::init",
+    "bundle::init": "luaccbundle init init/index.lua dist/init.bundle.lua",
+    "bundle::script": "luaccbundle dex dex/index.lua dist/dex.bundle.lua"
+  },
+  "keywords": [],
+  "author": "YieldingCoder",
+  "license": "ALL-RIGHTS-RESERVED",
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "luaccbundle": "^1.0.0"
+  }
+}
